@@ -63,4 +63,4 @@ async def clear_thumb_nail(client, message):
     ismgs = await message.reply_text("Searching your thumbnail ...")
     if os.path.exists(thumb_image_path):
         os.remove(thumb_image_path)
-    await ismgs.edit("✅ Custom thumbnail has been cleared .")
+    await ismgs.edit("✅ Custom thumbnail has been cleared © @tgleech by @s4hchannel .")
