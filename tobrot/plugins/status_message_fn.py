@@ -74,11 +74,13 @@ async def status_message_f(client, message):
         msg += " | "
         msg += f"<code>/cancel {current_gid}</code>"
         msg += " | "
+        msg += " ©@s4hchannel "
+        msg += " | "
         msg += "\n\n"
     LOGGER.info(msg)
 
     if msg == "":
-        msg = "🤷‍♂️ No Active, Queued or Paused TORRENT's"
+        msg = "🤷‍♂️ No Active, Queued or Paused TORRENT's  ©@s4hchannel"
 
     currentTime = time.strftime("%H:%M:%S", time.gmtime(time.time() - BOT_START_TIME))   #ctrl-c & ctrl-v 😑
     total, used, free = shutil.disk_usage(".")
